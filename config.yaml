@@ -148,30 +148,7 @@ script:
 #rules:
 
 rules:
-  - DOMAIN-SUFFIX,google.com,🔰Proxy
-  - DOMAIN-KEYWORD,google,🔰Proxy
-  - DOMAIN,google.com,🔰Proxy
-  - DOMAIN-SUFFIX,ad.com,REJECT
-  - DOMAIN-KEYWORD,stake.com,DIRECT
-  - DOMAIN-KEYWORD,betfury.io,DIRECT
-  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
-  # optional param "no-resolve" for IP rules (GEOIP, IP-CIDR, IP-CIDR6)
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - GEOIP,MM,DIRECT
-  - DST-PORT,80,DIRECT
-  - SRC-PORT,7777,DIRECT
-  - IP-CIDR,91.108.8.0/22,🔰Proxy,no-resolve
-  - IP-CIDR,91.108.12.0/22,🔰Proxy,no-resolve
-  - IP-CIDR,91.108.16.0/22,🔰Proxy,no-resolve
-  - IP-CIDR,91.108.56.0/22,🔰Proxy,no-resolve
-  - IP-CIDR,109.239.140.0/24,🔰Proxy,no-resolve
-  - IP-CIDR,149.154.160.0/20,🔰Proxy,no-resolve
-  - IP-CIDR,2001:b28:f23d::/48,🔰Proxy,no-resolve
-  - IP-CIDR,2001:b28:f23f::/48,🔰Proxy,no-resolve
-  - IP-CIDR,2001:67c:4e8::/48,🔰Proxy,no-resolve
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
+  - RULE-SET,apple,REJECT
+  - RULE-SET,microsoft,policy
   - MATCH,🔰Proxy
 
