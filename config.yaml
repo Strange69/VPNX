@@ -146,9 +146,12 @@ script:
         ctx.log('[Script] FINAL')
         return "🔰Proxy"
 #rules:
-
 rules:
   - RULE-SET,apple,REJECT
   - RULE-SET,microsoft,policy
+  - RULE-SET,apple,REJECT
+  - RULE-SET,apple,REJECT
+  - RULE-SET,apple,REJECT
+  - RULE-SET,apple,REJECT
   - MATCH,🔰Proxy
 
