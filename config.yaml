@@ -147,11 +147,12 @@ script:
         return "🔰Proxy"
 #rules:
 rules:
-  - RULE-SET,apple,REJECT
-  - RULE-SET,microsoft,policy
-  - RULE-SET,apple,REJECT
-  - RULE-SET,apple,REJECT
-  - RULE-SET,apple,REJECT
-  - RULE-SET,apple,REJECT
+  - RULE-SET,Browser,REJECT
+  - RULE-SET,Facebook,policy
+  - RULE-SET,Google,REJECT
+  - RULE-SET,Tiktok,REJECT
+  - RULE-SET,LAN,REJECT
+  - RULE-SET,Youtube,REJECT
+  - RULE-SET,BLOCK,REJECT
   - MATCH,🔰Proxy
 
