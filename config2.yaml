@@ -46,7 +46,7 @@ experimental:
 proxy-providers:
   strangeproxy:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/pstrange.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Proxy/proxy.yaml"
     interval: 3600
     path: ./strangeproxy.yaml
     health-check:
