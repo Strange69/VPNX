@@ -153,7 +153,7 @@ rules:
   - RULE-SET,Tiktok,🔰Proxy
   - RULE-SET,LAN,DIRECT
   - RULE-SET,Youtube,🔰Proxy
-  - RULE-SET,BLOCK,REJECT
+  - RULE-SET,Block,REJECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - GEOIP,MM,DIRECT
   - DST-PORT,80,DIRECT
