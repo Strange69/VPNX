@@ -55,51 +55,50 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       
 proxy-groups:
-- name: 🔰Proxy
-  type: select
-  use:
-  - strangeproxy
+  name: 🔰Proxy
+   type: select
+   use: - strangeproxy
   
 rule-providers:
   Browser:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/browser.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/browserrule.yaml"
     behavior: classical
     path: ./browser.yaml
     
   Facebook:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/facebook.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/facebookrule.yaml"
     behavior: classical
     path: ./facebook.yaml
   
   Block:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/block.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/blockrule.yaml"
     behavior: classical
     path: ./block.yaml
     
   LAN:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/lan.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/lanrule.yaml"
     behavior: classical
     path: ./lan.yaml
   
   Google:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/google.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/googlerule.yaml"
     behavior: classical
     path: ./google.yaml
     
   Tiktok:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/tiktok.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/tiktokrule.yaml"
     behavior: classical
     path: ./tiktok.yaml
   
   Youtube:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/Private/main/Rule/youtube.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/youtuberule.yaml"
     behavior: classical
     path: ./youtube.yaml
     
