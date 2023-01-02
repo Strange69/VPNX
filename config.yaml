@@ -60,11 +60,11 @@ proxy-groups:
    use: - strangeproxy
   
 rule-providers:
-  Browser:
+  Proxy:
     type: http
-    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/browserrule.yaml"
+    url: "https://raw.githubusercontent.com/Strange69/VPNX/main/Rules/proxyrule.yaml"
     behavior: classical
-    path: ./browser.yaml
+    path: ./proxy.yaml
     
   Facebook:
     type: http
