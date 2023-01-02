@@ -147,12 +147,13 @@ script:
         ctx.log('[Script] FINAL')
         return "🔰Proxy"
 rules:
-  - DOMAIN-SUFFIX,google.com,🔰Proxy
-  - DOMAIN-KEYWORD,google,🔰Proxy
-  - DOMAIN,google.com,🔰Proxy
-  - DOMAIN-SUFFIX,ad.com,REJECT
-  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
-  # optional param "no-resolve" for IP rules (GEOIP, IP-CIDR, IP-CIDR6)
+  - RULE-SET,Proxy,🔰Proxy
+  - RULE-SET,Facebook,🔰Proxy
+  - RULE-SET,Google,🔰Proxy
+  - RULE-SET,Tiktok,🔰Proxy
+  - RULE-SET,LAN,DIRECT
+  - RULE-SET,Youtube,🔰Proxy
+  - RULE-SET,BLOCK,REJECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - GEOIP,MM,DIRECT
   - DST-PORT,80,DIRECT
